@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 });
 
 function dapatIDMovie(idMovie) {
-  return fetch("http://www.omdbapi.com/?apikey=c42fe6ae&i=" + idMovie)
+  return fetch("https://www.omdbapi.com/?apikey=c42fe6ae&i=" + idMovie)
     .then((response) => response.json())
     .then((m) => m);
 }
@@ -75,7 +75,7 @@ function updateUIDetail(m) {
 function dapatMovie(pencarian) {
   // panggil data dari fetch
   return (
-    fetch("http://www.omdbapi.com/?i=tt3896198&apikey=c42fe6ae&s=" + pencarian)
+    fetch("https://www.omdbapi.com/?i=tt3896198&apikey=c42fe6ae&s=" + pencarian)
       // ubah ke json
       .then((response) => response.json())
       .then((response) => response.Search)
